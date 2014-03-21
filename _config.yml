@@ -1,0 +1,8 @@
+name: OpenSpace
+pygments: true
+
+source:      .
+destination: ./_site
+
+exclude: ["Gemfile", "Gemfile.lock"]
+
