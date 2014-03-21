@@ -1,4 +1,4 @@
 name: OpenSpace
 pygments: true
 
-exclude: ["Gemfile", "Gemfile.lock", "Procfile", "config.ru"]
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "Procfile", "config.ru"]
