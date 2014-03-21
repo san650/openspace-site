@@ -1,9 +1,8 @@
 source "https://rubygems.org"
 
-gem "rack"
+gem "sinatra"
 gem "thin"
 
-group :development do
-  gem "jekyll"
-  gem "jekyll-assets"
-end
+gem "jekyll"
+gem "jekyll-assets"
+gem "RedCloth"

@@ -1,8 +1,4 @@
 name: OpenSpace
 pygments: true
 
-source:      .
-destination: ./_site
-
-exclude: ["Gemfile", "Gemfile.lock"]
-
+exclude: ["Gemfile", "Gemfile.lock", "Procfile", "config.ru"]
