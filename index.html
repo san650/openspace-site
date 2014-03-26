@@ -17,14 +17,9 @@ title: Open Space - Agile.uy
     <![endif]-->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300|Ultra' rel='stylesheet' type='text/css'>
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="//fotorama.s3.amazonaws.com/4.5.0/fotorama.css" rel="stylesheet"> <!-- 2 KB -->
     {% stylesheet app %}
-    {% javascript app %}
-
-    <style>
-      #home {
-        background-image: url()
-      }
-    </style>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -45,8 +40,8 @@ title: Open Space - Agile.uy
           <ul class="nav navbar-nav">
             <li class="active"><a href="#home">Inicio</a></li>
             <li><a href="#what">¿Que es un open space?</a></li>
-            <li><a href="#agenda">Agenda</a></li>
             <li><a href="#where">Lugar</a></li>
+            <li><a href="#agenda">Agenda</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
           </ul>
 
@@ -56,21 +51,16 @@ title: Open Space - Agile.uy
         </div>
       </div>
     </nav>
-    <div class="section" id="home">
-      <h2>Open Space</h2>
-      <p>
-        La comunidad Agile de Uruguay te invita a participar en un evento
-        Open Space que se realizará en las instalaciones del Latu el día
-        sábado 4 de mayo de 2013 en horario de 10 a 16 horas. Creemos que
-        será de gran valor para todos quienes están adoptando Agile o
-        piensan hacerlo.
-      </p>
-
-      <img src="{{ 'openspace.jpg' | asset_path }}" alt="Open Space">
+    <div class="splash" id="home">
+      <div class="images">
+        <img
+          src="{{ 'openspace.jpg' | asset_path }}"
+          alt="Open Space 2014"
+          data-caption="Open Space 2014&lt;span&gt;Montevideo - 17 de Mayo del 2014&lt;/span&gt;">
+      </div>
     </div>
     <div class="section" id="what">
       <h2>¿Que es un open space?</h2>
-
       <p>
         Un open space es un espacio para socializar
         el conocimiento de todos los participantes que podrán concurrir
@@ -86,19 +76,26 @@ title: Open Space - Agile.uy
         disciplinas Agile súmate a esta movida, ve pensando tu charla, discusión,
         pregunta o lo que te genere más inquietud.
       </p>
-
+    </div>
+    <div class="section" id="where">
+      <h2>Lugar</h2>
+      <p>
+        La comunidad Agile de Uruguay te invita a participar en un evento
+        Open Space que se realizará en la Universidad Católica el día
+        Sábado 17 de Mayo de 2013 en horario de 10 a 16 horas. Creemos que
+        será de gran valor para todos quienes están adoptando Agile o
+        piensan hacerlo.
+      </p>
     </div>
     <div class="section" id="agenda">
       <h2>Agenda</h2>
     </div>
-    <div class="section" id="where">
-      <h2>Lugar</h2>
-    </div>
     <div class="section" id="sponsors">
       <h2>Sponsors</h2>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//fotorama.s3.amazonaws.com/4.5.0/fotorama.js"></script> <!-- 9 KB -->
+    {% javascript app %}
   </body>
 </html>

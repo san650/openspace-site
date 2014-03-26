@@ -68,3 +68,59 @@ h4 {
   margin-top: 10px;
   display:block;
 }
+
+.splash {
+  min-height: 100%;
+}
+
+.fotorama__caption {
+  bottom: 20%;
+  width: auto;
+  background: transparent;
+}
+
+.fotorama__caption__wrap {
+  font-family: 'Ultra';
+  background: transparent;
+  width: 100%;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.fotorama__caption__wrap span {
+  display: block;
+  font-family: 'dosis';
+  text-align: center;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+@media (min-width: 768px) {
+  .fotorama__caption__wrap {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .fotorama__caption__wrap span {
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  }
+}
+
+@media (min-width: 992px) {
+  .fotorama__caption__wrap {
+    font-size: 130px;
+    line-height: 130px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  }
+
+  .fotorama__caption__wrap span {
+    font-size: 74px;
+    line-height: 80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  }
+}
