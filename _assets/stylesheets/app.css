@@ -124,3 +124,34 @@ h4 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
 }
+
+#sponsors li {
+  line-height: 240px;
+  height: 240px;
+  width: 240px;
+}
+
+#sponsors ul li {
+  display: inline-block;
+  height: 240px;
+  margin: 0 12px;
+  overflow: hidden;
+  padding: 5px;
+  width: 240px;
+}
+
+#sponsors img {
+  width: 100%;
+}
+
+#where iframe {
+  display: block;
+  margin: 20px 0 0 0;
+  border: none;
+  width: 100%;
+  height: 550px;
+}
+
+#where .dir {
+  font-size: 0.8em;
+}
