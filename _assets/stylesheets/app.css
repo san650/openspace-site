@@ -185,9 +185,32 @@ h4 {
 }
 
 /* register */
-#register {
+.full-register {
+  display: none;
 }
 
+.mobile-register {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .full-register {
+    display: block;
+  }
+
+  .mobile-register {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .full-register {
+    display: block;
+  }
+
+  .mobile-register {
+    display: none;
+  }
+}
 /* navbar theme */
 
 .navbar-brand {
