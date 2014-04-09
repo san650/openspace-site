@@ -163,3 +163,35 @@ h4 {
 #where .dir {
   font-size: 0.8em;
 }
+
+/* navbar theme */
+
+.navbar-brand {
+  padding: 6px;
+}
+
+.navbar-default {
+  background-color: #000;
+  border-color: #e7e7e7;
+  min-height: 55px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #e7e7e7;
+  background-color: #777;
+}
+
+.navbar-nav > li > a {
+  line-height: 40px;
+}
