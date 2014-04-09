@@ -37,7 +37,7 @@ h2::after {
   display: block;
 }
 
-h3 {
+.section h3 {
   margin: 30px 0 10px 0;
   padding: 0;
   font-family: 'dosis';
@@ -146,7 +146,7 @@ h4 {
 }
 
 #where {
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 
 #where p {
@@ -195,4 +195,22 @@ h4 {
 
 .navbar-nav > li > a {
   line-height: 40px;
+}
+
+/* footer */
+#footer {
+  color: #fff;
+  background-color: #282828;
+  padding-bottom: 70px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+#footer h3 {
+  margin: 30px 0 10px 0;
+  padding: 0;
+  font-family: 'dosis';
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 200;
 }
