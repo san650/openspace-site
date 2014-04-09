@@ -126,23 +126,40 @@ h4 {
   }
 }
 
+/* sponsors */
 #sponsors li {
-  line-height: 240px;
-  height: 240px;
-  width: 240px;
-}
-
-#sponsors ul li {
-  display: inline-block;
-  height: 240px;
-  margin: 0 12px;
+  display: block;
+  height: 120px;
+  line-height: 120px;
+  margin: 0 auto;
   overflow: hidden;
-  padding: 5px;
-  width: 240px;
+  width: 250px;
 }
 
 #sponsors img {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  #sponsors li {
+    display: inline-block;
+    line-height: 240px;
+    height: 240px;
+    width: 240px;
+    margin: 0 12px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  #sponsors li {
+    display: inline-block;
+    line-height: 240px;
+    height: 240px;
+    width: 240px;
+    margin: 0 12px;
+    padding: 5px;
+  }
 }
 
 #where {
