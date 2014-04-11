@@ -7,6 +7,7 @@ GEM
     daemons (1.1.9)
     directory_watcher (1.5.1)
     eventmachine (1.0.3)
+    execjs (2.0.2)
     fast-stemmer (1.0.2)
     hike (1.2.3)
     jekyll (0.12.1)
@@ -19,6 +20,7 @@ GEM
     jekyll-assets (0.4.2)
       jekyll (< 1.0.0)
       sprockets (~> 2.9)
+    json (1.8.1)
     kramdown (0.14.2)
     liquid (2.6.1)
     maruku (0.7.1)
@@ -30,6 +32,7 @@ GEM
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
+    sass (3.2.13)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -44,6 +47,9 @@ GEM
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
     tilt (1.4.1)
+    uglifier (2.5.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -53,5 +59,7 @@ DEPENDENCIES
   RedCloth
   jekyll
   jekyll-assets
+  sass
   sinatra
   thin
+  uglifier
