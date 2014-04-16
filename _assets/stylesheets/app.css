@@ -69,6 +69,8 @@ h4 {
   display:block;
 }
 
+/* splash */
+
 .splash {
   min-height: 100%;
 }
@@ -124,6 +126,35 @@ h4 {
     line-height: 80px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
+}
+
+.social {
+  display: block;
+  right: 10%;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: -85px;
+  padding: 0;
+}
+
+.social li {
+  float: left;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 0;
+  height: 75px;
+  line-height: 75px;
+  vertical-align: middle;
+}
+
+.social li i {
+  float: left;
+  display: block;
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-size: 60px;
 }
 
 /* sponsors */
@@ -287,6 +318,14 @@ h4 {
 
 .navbar-nav > li > a {
   line-height: 40px;
+}
+
+.navbar-right > li > a {
+  padding: 10px 20px 0;
+}
+
+.navbar-right > li img {
+  height: 50px;
 }
 
 /* footer */
