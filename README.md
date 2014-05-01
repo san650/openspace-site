@@ -1,4 +1,4 @@
-# Agile.uy: Open Space web site
+# agiles.uy web site
 
 ## Local development
 
