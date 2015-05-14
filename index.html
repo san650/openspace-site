@@ -1,6 +1,331 @@
 ---
 title: Open Space - Agile.uy
 ---
-<script>
-  window.location.href = "http://meetup.com/AgileUY/";
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agile.uy</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300|Oswald:700' rel='stylesheet' type='text/css'>
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="//fotorama.s3.amazonaws.com/4.5.0/fotorama.css" rel="stylesheet"> <!-- 2 KB -->
+    {% stylesheet app %}
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar navbar-brand">
+            <img src="{{ 'agileuy.png' | asset_path }}" alt="Comunidad Agile Uruguay" style="padding-top:3px" />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Inicio</a></li>
+            <li><a href="#what">¿Qué es?</a></li>
+            <li><a href="#register">Registro</a></li>
+            <li><a href="#sponsors">Apoyan</a></li>
+            <li><a href="#where">Lugar</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="http://www.meetup.com/AgileUY/" target="_blank">
+                <img src="{{ 'meetup.png' | asset_path }}" alt="meetup" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="splash" id="home">
+      <div class="images">
+        <img
+          src="{{ 'openspace.jpg' | asset_path }}"
+          alt="Open Space 2014"
+          data-caption="Agile Open Space&lt;span&gt;Montevideo - 17 de Mayo del 2014&lt;/span&gt;">
+      </div>
+    </div>
+
+    <ul class="list-unstyled social">
+      <li>
+        <a href="https://twitter.com/agileuy" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/OpenSpaceUy" target="_blank">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+      </li>
+      <li>
+      </li>
+    </ul>
+
+    <div class="section" id="what">
+      <h2>¿Qué es un open space?</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Un Open Space es un formato de conferencia o reunión abierta,
+            donde la principal característica es que la agenda se genera de
+            manera dinámica entre todos los participantes de la reunión.
+            En general constan de 4 partes: <strong>Apertura</strong>, <strong>Mercado de
+            ideas</strong>, <strong>Sesiones</strong> y <strong>Clausura</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- apertura -->
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="{{ 'apertura.jpg' | asset_path }}" alt="Agile Open Space 2013">
+            <div class="caption">
+              <h3><span class="index"><span>1</span></span>Apertura</h3>
+              <p>
+                Un facilitador explica la estructura y mecánica del Open Space.
+                En este momento la agenda del evento está vacía!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketplace -->
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="{{ 'marketplace.jpg' | asset_path }}" alt="Agile Open Space 2013">
+            <div class="caption">
+              <h3><span class="index"><span>2</span></span>Mercado de ideas</h3>
+              <p>
+                Luego cada participante que desee proponer un tema tiene un máximo de 2
+                minutos para contarle al resto sobre lo que desea hablar o escuchar. Al
+                finalizar se tendrá la agenda completa de donde los participantes
+                seleccionarán los temas de su interés.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- apertura -->
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="{{ 'sesiones.jpg' | asset_path }}" alt="Agile Open Space 2013">
+            <div class="caption">
+              <h3><span class="index"><span>3</span></span>Sesiones</h3>
+              <p>
+                Conversaciones del tópico seleccionado, los participantes
+                se auto-organizan en los lugares predefinidos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketplace -->
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="{{ 'clausura.jpg' | asset_path }}" alt="Agile Open Space 2013">
+            <div class="caption">
+              <h3><span class="index"><span>4</span></span>Clausura</h3>
+              <p>
+                Luego de finalizar todas las sesiones y con ayuda del facilitador,
+                los participantes se reúnen nuevamente para realizar el cierre del evento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 id="how">
+        ¿Cómo puedo participar?
+      </h2>
+      <h3>En un Open Space hay lugar para cualquier tipo de sesión.</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sesión del tipo "yo presento"</div>
+            <div class="panel-body">
+              Tengo un tema sobre el que (creo que) sé y quiero transmitir ese conocimiento. Puede ser una presentación tipo PPT, un workshop con una laptop por persona, lo que me plazca.
+              Una variante poco usada es "quiero aprender sobre", en la que alguien pasa al centro y pregunta "¿Alguien me puede explicar cómo funciona la fisión nuclear?". Si nadie sabe del tema, simplemente no ocurre la sesión. O mejor aún, nos juntamos a googlear.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">Sesión del tipo "discutamos"</div>
+            <div class="panel-body">
+              Considero que este es un tema abierto, sobre el que me gustaría que simplemente charlemos. Esta es la típica sesión que se termina haciendo con un círculo de sillas y es la más asociada a un open space.
+              Una posible variante es la sesión "de trabajo", en la cual esperamos tener un cierto output. Por ejemplo "planifiquemos cómo festejar si Filipinas gana el mundial".
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="register">
+      <h2>Registro</h2>
+      <div class="row full-register">
+        <div class="col-md-offset-3 col-md-7">
+          <iframe src="https://eventioz.com.ar/e/agile-open-space-uy-2014/registrations/new?iframe=" width="600" height="500" frameborder="0" scrolling="yes" style="width:600;height:500"></iframe>
+        </div>
+      </div>
+      <div class="row mobile-register">
+        Regístrate a través de <a href="https://eventioz.com.ar/e/agile-open-space-uy-2014" target="_blank">Eventioz</a>
+      </div>
+    </div>
+    <div class="section sponsors" id="sponsors">
+      <h2>Apoyan</h2>
+      <ul>
+        <li>
+          <a href="http://www.3cinteractive.com/" target="_blank">
+            <img src="{{ 'sponsors/3cinteractive.png' | asset_path }}" alt="3C Interactive" />
+          </a>
+        </li>
+        <li>
+          <a href="http://case-inc.com/" target="_blank">
+            <img src="{{ 'sponsors/case.png' | asset_path }}" alt="CASE" />
+          </a>
+        </li>
+        <li>
+          <a href="http://cpainnovation.com.uy/" target="_blank">
+            <img src="{{ 'sponsors/cpa-innovation.png' | asset_path }}" alt="CPA Innovation" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.globant.com/" target="_blank">
+            <img src="{{ 'sponsors/globant.png' | asset_path }}" alt="Globant" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.microsoft.com/" target="_blank">
+            <img src="{{ 'sponsors/microsoft.png' | asset_path }}" alt="Microsoft" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.neo.com/" target="_blank">
+            <img src="{{ 'sponsors/neo.png' | asset_path }}" alt="neo" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.onetree.com/" target="_blank">
+            <img src="{{ 'sponsors/onetree.png' | asset_path }}" alt="onetree" />
+          </a>
+        </li>
+        <li>
+          <img src="{{ 'sponsors/peregrinus.png' | asset_path }}" />
+        </li>
+        <li>
+          <a href="http://www.pyxisportal.com/" target="_blank">
+            <img src="{{ 'sponsors/pyxis.png' | asset_path }}" alt="pyxis" />
+          </a>
+        </li>
+        <li>
+          <a href="http://synchronit.com/" target="_blank">
+            <img src="{{ 'sponsors/synchronit.png' | asset_path }}" alt="synchronit" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.ucu.edu.uy/" target="_blank">
+            <img src="{{ 'sponsors/ucu.jpg' | asset_path }}" alt="Universidad Católica del Uruguay" />
+          </a>
+        </li>
+        <li>
+          <a href="http://uruit.com/" target="_blank">
+            <img src="{{ 'sponsors/uruit.png' | asset_path }}" alt="UruIT" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.vairix.com/" target="_blank">
+            <img src="{{ 'sponsors/vairix.png' | asset_path }}" alt="Vairix" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.velocitypartners.net/" target="_blank">
+            <img src="{{ 'sponsors/velocity-partners.png' | asset_path }}" alt="Velocity Partners" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.wyeworks.com/" target="_blank">
+            <img src="{{ 'sponsors/wyeworks.png' | asset_path }}" alt="WyeWorks" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section sponsors" id="support">
+      <h2>Apoyan en la comunicación</h2>
+      <ul>
+        <li>
+          <a href="http://www.cuti.org.uy/" target="_blank">
+            <img src="{{ 'sponsors/cuti.png' | asset_path }}" alt="CUTI" />
+          </a>
+        </li>
+        <li>
+          <a href="http://tech.meetup.uy/" target="_blank">
+            <img src="{{ 'sponsors/techmeetup.png' | asset_path }}" alt="CUTI" />
+          </a>
+        </li>
+        <li>
+          <a href="http://ude.edu.uy/" target="_blank">
+            <img src="{{ 'sponsors/ude.jpg' | asset_path }}" alt="UDE" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section" id="where">
+      <h2>Lugar</h2>
+      <h3>
+        Universidad Católica del Uruguay
+        <span>Sábado, 17 de Mayo de 2014, 09:30 hs - 17:00 hs</span>
+      </h3>
+      <p class="dir">
+        Sede Central | Montevideo<br>
+        Av. 8 de Octubre 2738, entre Garibaldi y Estero Bellaco<br>
+        Aula Magna
+      </p>
+      <iframe src="https://www.google.com/maps/ms?msa=0&msid=216041928949969002645.0004f5f028a2f010e1f3e&hl=en&ie=UTF8&ll=-34.888694,-56.159218&spn=0,0&t=m&output=embed" frameborder="0" style="border:0"></iframe>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Más información</h3>
+            <p>
+              Por más información puedes contactarnos a través de
+              <ul>
+                <li>
+                  <a href="http://www.meetup.com/agileuy/" target="_blank">Meetup AgileUy</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/agileuy" target="_blank"><i class="fa fa-twitter"></i> @agileuy</a>
+                </li>
+                <li>
+                <a href="https://www.facebook.com/OpenSpaceUy" target="_blank"><i class="fa fa-facebook-square"></i> OpenSpaceUy</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//fotorama.s3.amazonaws.com/4.5.0/fotorama.js"></script> <!-- 9 KB -->
+    {% javascript app %}
+  </body>
+</html>
